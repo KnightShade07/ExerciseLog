@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/txtExerciseDay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text=" Exercise Day:"
@@ -19,7 +19,7 @@
         app:layout_constraintVertical_bias="0.094" />
 
     <EditText
-        android:id="@+id/editTextNumber"
+        android:id="@+id/boxExerciseDay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -32,7 +32,7 @@
         app:layout_constraintVertical_bias="0.19" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/txtExerciseName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text=" Exercise Name:"
@@ -44,7 +44,7 @@
         app:layout_constraintVertical_bias="0.324" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/boxExerciseName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -58,7 +58,7 @@
         app:layout_constraintVertical_bias="0.432" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/txtReps"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text=" Reps:"
@@ -70,7 +70,7 @@
         app:layout_constraintVertical_bias="0.539" />
 
     <EditText
-        android:id="@+id/editTextNumber2"
+        android:id="@+id/boxReps"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -83,7 +83,7 @@
         app:layout_constraintVertical_bias="0.661" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/txtTimeSpent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text=" Time Spent:"
@@ -95,7 +95,7 @@
         app:layout_constraintVertical_bias="0.734" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/txtTimeQuantity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text=" Quantity (mins, hours):"
@@ -107,7 +107,7 @@
         app:layout_constraintVertical_bias="0.734" />
 
     <EditText
-        android:id="@+id/editTextNumber3"
+        android:id="@+id/boxTimeSpent"
         android:layout_width="84dp"
         android:layout_height="39dp"
         android:ems="10"
@@ -120,7 +120,7 @@
         app:layout_constraintVertical_bias="0.833" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName4"
+        android:id="@+id/boxTimeQuantity"
         android:layout_width="80dp"
         android:layout_height="38dp"
         android:ems="10"
@@ -134,7 +134,7 @@
         app:layout_constraintVertical_bias="0.832" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnSubmitData"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Submit Data"
@@ -146,7 +146,7 @@
         app:layout_constraintVertical_bias="0.953" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnLogPage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Go To Log Page"
