@@ -12,8 +12,8 @@ public class ExerciseRecordKeeper extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_exercise_record_keeper);
-
         returnButton();
+
     }
     private void returnButton(){
         Button returnButton = findViewById(R.id.btnDBEntry);
