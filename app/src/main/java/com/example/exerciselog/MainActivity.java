@@ -1,6 +1,8 @@
 package com.example.exerciselog;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.room.Room;
+import androidx.room.RoomDatabase;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,6 +16,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //creates the database when the app is started up.
+        AppDatabase exerciseDB = Room.databaseBuilder(getApplicationContext(),
+                AppDatabase.class,"ExerciseDB").build();
 
         activityNavigator();
     }
