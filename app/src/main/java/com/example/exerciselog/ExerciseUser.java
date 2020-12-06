@@ -1,5 +1,12 @@
 package com.example.exerciselog;
 
+import androidx.room.Dao;
+import androidx.room.Delete;
+import androidx.room.Entity;
+import androidx.room.Insert;
+import androidx.room.Query;
+
+@Entity
 public class ExerciseUser {
     // The current day of exercise the user is on
     int exerciseDay;
@@ -12,3 +19,5 @@ public class ExerciseUser {
     //mins, hours, etc.
     public String timeType;
 }
+
+
