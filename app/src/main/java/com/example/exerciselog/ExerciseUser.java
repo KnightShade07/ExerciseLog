@@ -4,10 +4,13 @@ import androidx.room.Dao;
 import androidx.room.Delete;
 import androidx.room.Entity;
 import androidx.room.Insert;
+import androidx.room.PrimaryKey;
 import androidx.room.Query;
 
 @Entity
 public class ExerciseUser {
+    @PrimaryKey
+    public int userID;
     // The current day of exercise the user is on
     int exerciseDay;
     //The name of the exercise
