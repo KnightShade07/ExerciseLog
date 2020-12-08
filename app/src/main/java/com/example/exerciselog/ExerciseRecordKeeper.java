@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 public class ExerciseRecordKeeper extends AppCompatActivity {
 
@@ -13,6 +15,9 @@ public class ExerciseRecordKeeper extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_exercise_record_keeper);
         returnButton();
+        TextView txtExerciseLog =  findViewById(R.id.txtExerciseLog);
+        txtExerciseLog.setFocusable(false);
+
 
     }
     private void returnButton(){
