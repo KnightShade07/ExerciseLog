@@ -8,6 +8,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,6 +21,15 @@ public class MainActivity extends AppCompatActivity {
         //creates the database when the app is started up.
         AppDatabase exerciseDB = Room.databaseBuilder(getApplicationContext(),
                 AppDatabase.class,"ExerciseDB").build();
+
+        EditText boxExerciseDay = findViewById(R.id.boxExerciseDay);
+        EditText boxExerciseName = findViewById(R.id.boxExerciseName);
+        EditText boxReps = findViewById(R.id.boxReps);
+        TextView timeSpent =  findViewById(R.id.txtTimeSpent);
+        EditText timeQuantity = findViewById(R.id.boxTimeQuantity);
+
+
+
 
         activityNavigator();
     }
