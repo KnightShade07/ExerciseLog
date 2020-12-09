@@ -21,6 +21,8 @@ public class ExerciseUser {
     public String timeSpent;
     //mins, hours, etc.
     public String timeType;
+
+
 }
 
 
