@@ -8,7 +8,7 @@ import androidx.room.Query;
 import java.util.List;
 @Dao
 public interface ExerciseUserDao {
-    @Query("SELECT * FROM exerciseuser")
+    @Query("SELECT * FROM users")
     List<ExerciseUser> getAll();
 
     @Insert
