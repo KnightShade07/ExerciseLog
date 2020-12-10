@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
                 AppDatabase.class,"ExerciseDB").build();
 
         //gets the inputs out of the text boxes
+        String exerciseDayContent = boxExerciseDay.getText().toString();
         String exerciseNameContent = boxExerciseName.getText().toString();
         String boxRepsContent = boxReps.getText().toString();
         String timeSpentContent = timeSpent.getText().toString();
