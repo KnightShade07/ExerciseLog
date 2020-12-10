@@ -7,9 +7,9 @@ import androidx.room.Insert;
 import androidx.room.PrimaryKey;
 import androidx.room.Query;
 
-@Entity
+@Entity(tableName = "users")
 public class ExerciseUser {
-    @PrimaryKey
+    @PrimaryKey(autoGenerate = true)
     public int userID;
     // The current day of exercise the user is on
     int exerciseDay;
