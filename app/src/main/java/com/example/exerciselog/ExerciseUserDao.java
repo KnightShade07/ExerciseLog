@@ -12,7 +12,7 @@ public interface ExerciseUserDao {
     List<ExerciseUser> getAll();
 
     @Insert
-    void insertAll(ExerciseUser users);
+    void insert(ExerciseUser users);
 
     @Delete
     void delete(ExerciseUser user);
