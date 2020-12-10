@@ -16,6 +16,10 @@ public class ExerciseRepository {
         allExercises = (LiveData<List<ExerciseUser>>) exerciseDao.getAll();
     }
 
+    LiveData<List<ExerciseUser>> getAllExercises(){
+        return allExercises;
+    }
+
     void insert(ExerciseUser exerciseUser) {
         AppDatabase.databaseWriteExecutor.execute(() -> {
             exerciseDao.insert(exerciseUser);
