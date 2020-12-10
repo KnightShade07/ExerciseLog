@@ -12,12 +12,12 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+    EditText boxExerciseDay;
+    EditText boxExerciseName;
+    EditText boxReps;
+    TextView timeSpent;
+    EditText timeQuantity;
 
-    EditText boxExerciseDay = findViewById(R.id.boxExerciseDay);
-    EditText boxExerciseName = findViewById(R.id.boxExerciseName);
-    EditText boxReps = findViewById(R.id.boxReps);
-    TextView timeSpent =  findViewById(R.id.txtTimeSpent);
-    EditText timeQuantity = findViewById(R.id.boxTimeQuantity);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +26,12 @@ public class MainActivity extends AppCompatActivity {
         //creates the database when the app is started up.
         AppDatabase exerciseDB = Room.databaseBuilder(getApplicationContext(),
                 AppDatabase.class,"ExerciseDB").build();
+
+        boxExerciseDay = findViewById(R.id.boxExerciseDay);
+        boxExerciseName = findViewById(R.id.boxExerciseName);
+        boxReps = findViewById(R.id.boxReps);
+        timeSpent =  findViewById(R.id.txtTimeSpent);
+        timeQuantity = findViewById(R.id.boxTimeQuantity);
 
         //gets the inputs out of the text boxes
         String exerciseDayContent = boxExerciseDay.getText().toString();
