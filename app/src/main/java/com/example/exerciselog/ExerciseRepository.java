@@ -18,7 +18,7 @@ public class ExerciseRepository {
 
     void insert(ExerciseUser exerciseUser) {
         AppDatabase.databaseWriteExecutor.execute(() -> {
-            exerciseDao.insert();
+            exerciseDao.insert(exerciseUser);
         });
     }
 }
