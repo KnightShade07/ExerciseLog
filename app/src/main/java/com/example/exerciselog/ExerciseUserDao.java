@@ -8,7 +8,7 @@ import androidx.room.Query;
 import java.util.List;
 @Dao
 public interface ExerciseUserDao {
-    @Query("SELECT * FROM users")
+    @Query("SELECT * FROM users ORDER BY exerciseDay ASC")
     List<ExerciseUser> getAll();
 
     @Insert
@@ -16,4 +16,7 @@ public interface ExerciseUserDao {
 
     @Delete
     void delete(ExerciseUser user);
+
+    @Query("DELETE FROM users")
+    void deleteAll();
 }
