@@ -23,9 +23,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //creates the database when the app is started up.
-        AppDatabase exerciseDB = Room.databaseBuilder(getApplicationContext(),
-                AppDatabase.class,"ExerciseDB").build();
 
         boxExerciseDay = findViewById(R.id.boxExerciseDay);
         boxExerciseName = findViewById(R.id.boxExerciseName);
